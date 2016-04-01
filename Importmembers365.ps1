@@ -1,0 +1,1 @@
+Import-CSV "C:\temp\DistributionGroupMembers.csv" | ForEach-Object {Add-DistributionGroupMember -Identity $_.DGDisplayName -Member $_.MemberPrimarySmtp}
