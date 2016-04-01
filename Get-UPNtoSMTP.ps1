@@ -14,15 +14,15 @@
     Begin
     {
        $OutputCollection = @()
-       $Users = get-eouser -resultsize $ResultSize -filter *
-       $Recip = get-eorecipient -RecipientTypeDetails UserMailbox -resultsize $ResultSize -filter * 
+       $Users = Get-User -resultsize $ResultSize -filter *
+       $Recip = Get-Recipient -RecipientTypeDetails UserMailbox -resultsize $ResultSize -filter * 
     }
     Process
     {
         $Recip | ForEach-Object{
         
         $recipientObject = $_
-        $userObject = get-eouser $recipientObject.Identity
+        $userObject = Get-User $recipientObject.Identity
     
 #        New-Object -TypeName PSObject -Property @{
 #            FirstName = $user.firstname
