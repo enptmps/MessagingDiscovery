@@ -15,7 +15,9 @@
     {
        $OutputCollection = @()
        $Users = Get-User -resultsize $ResultSize -filter *
+       Write-Verbose "found $($users.count) users"
        $Recip = Get-Recipient -RecipientTypeDetails UserMailbox -resultsize $ResultSize -filter * 
+       Write-Verbose "found $($recip.count) recipients"
     }
     Process
     {
@@ -42,5 +44,6 @@
     End
     {
         Return $OutputCollection
+        Write-Verbose "Output collection contains $($outputCollect.count) objects"
     }
 }
