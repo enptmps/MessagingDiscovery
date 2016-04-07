@@ -24,3 +24,17 @@ Shows users with mismatched UPN to PrimarySMTPAddress mapping
 ```
 
 #### DLEXPORT.PS1
+
+#### Get-EASDeviceReport.ps1
+
+#### MBXStats.ps1
+
+#### Get-PubilcFolderReplicationReport.ps1
+
+#### ImportDL365.ps1
+
+#### ImportMembers365.ps1
+
+#### MbxPermissions.ps1
+
+#### Get-VirDirInfo.ps1
