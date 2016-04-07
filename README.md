@@ -22,3 +22,5 @@ Shows users with mismatched UPN to PrimarySMTPAddress mapping
 ```powershell
 ./Get-UPNtoSMTP | ?{$_.UPN -ne $_.PrimarySMTPAddress}
 ```
+
+#### DLEXPORT.PS1
