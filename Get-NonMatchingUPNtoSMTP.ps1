@@ -1,4 +1,4 @@
-﻿Function Get-UPNtoSMTP
+﻿function Get-UPNtoSMTP
 {
     [CmdletBinding()]
     [Alias()]
@@ -14,8 +14,8 @@
     Begin
     {
        $OutputCollection = @()
-       $Users = Get-User -resultsize $ResultSize -filter *
-       Write-Verbose "found $($users.count) users"
+       #$Users = Get-User -resultsize $ResultSize -filter *
+       #Write-Verbose "found $($users.count) users"
        $Recip = Get-Recipient -RecipientTypeDetails UserMailbox -resultsize $ResultSize -filter * 
        Write-Verbose "found $($recip.count) recipients"
     }
@@ -47,3 +47,5 @@
         Write-Verbose "Output collection contains $($outputCollect.count) objects"
     }
 }
+
+Get-UPNtoSMTP -verbose | ?{$_.upn -ne $_.primarySMTPAddress}
