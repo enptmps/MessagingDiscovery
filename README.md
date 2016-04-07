@@ -15,8 +15,8 @@ Example Output
 ```powershell
 FirstName LastName PrimarySMTPAddress            UPN
 --------- -------- ------------------            ---
-Bob   Builder  bbuilder@enpt.onmicrosoft.com !bbuilder@Enpointe.com
-Telly Tubby    ttubby@mylocalness.com        notmatching@notlocal.com
+Bob       Builder  bbuilder@enpt.onmicrosoft.com !bbuilder@Enpointe.com
+Telly     Tubby    ttubby@mylocalness.com        notmatching@notlocal.com
 ```
 
 #### DLEXPORT.PS1
