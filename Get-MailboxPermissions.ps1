@@ -1,6 +1,6 @@
 <#
 .Synopsis
-   Short description
+   Short test
 .DESCRIPTION
    Long description
 .EXAMPLE
