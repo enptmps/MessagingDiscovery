@@ -20,6 +20,7 @@ Telly     Tubby    ttubby@mylocalness.com        notmatching@notlocal.com
 ```
 
 #### DLEXPORT.PS1
+build a file of all on prem DLs 
 
 #### Get-EASDeviceReport.ps1
 
@@ -28,17 +29,16 @@ Telly     Tubby    ttubby@mylocalness.com        notmatching@notlocal.com
 #### Get-PubilcFolderReplicationReport.ps1
 
 #### ImportDL365.ps1
+Import teh Onprem DL to 365 DG's
 
 #### ImportMembers365.ps1
+import members into the DGs in 365
 
 #### MbxPermissions.ps1
+check mailboxes for send as and full acccess permissions
 
 #### Get-VirDirInfo.ps1
 
 #### Retention report
-Get-RetentionPolicy | Foreach-Object{
-$Policy = $_
-(Get-RetentionPolicy $Policy).RetentionPolicyTagLinks | `
-select @{n=”Policy”;e ={$Policy }},name
-} | export-Csv  C:\scripts\RetentionPolicyTagLinks.csv -nti 
+Collect retention informatino
 
