@@ -40,5 +40,5 @@ check mailboxes for send as and full acccess permissions
 #### Get-VirDirInfo.ps1
 
 #### Retention report
-Collect retention informatino
+Collect retention information
 
