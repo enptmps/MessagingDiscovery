@@ -29,7 +29,7 @@ build a file of all on prem DLs
 #### Get-PubilcFolderReplicationReport.ps1
 
 #### ImportDL365.ps1
-Import teh Onprem DL to 365 DG's
+Import the Onprem DL to 365 DG's
 
 #### ImportMembers365.ps1
 import members into the DGs in 365
