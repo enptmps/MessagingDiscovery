@@ -34,3 +34,11 @@ Telly     Tubby    ttubby@mylocalness.com        notmatching@notlocal.com
 #### MbxPermissions.ps1
 
 #### Get-VirDirInfo.ps1
+
+#### Retention report
+Get-RetentionPolicy | Foreach-Object{
+$Policy = $_
+(Get-RetentionPolicy $Policy).RetentionPolicyTagLinks | `
+select @{n=”Policy”;e ={$Policy }},name
+} | export-Csv  C:\scripts\RetentionPolicyTagLinks.csv -nti 
+
