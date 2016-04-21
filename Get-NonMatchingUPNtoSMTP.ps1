@@ -1,4 +1,6 @@
-﻿function Get-UPNtoSMTP
+﻿#Require -Module blah
+function Get-UPNtoSMTP
+
 {
     [CmdletBinding()]
     [Alias()]
