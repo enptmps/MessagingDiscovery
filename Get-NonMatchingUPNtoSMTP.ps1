@@ -1,6 +1,7 @@
-﻿function Get-UPNtoSMTP
+﻿#Requires -Version 2.0
+function Get-UPNtoSMTP
 {
-#Requires -Version 2.0
+
     [CmdletBinding()]
     [OutputType([PSObject])]
     Param
@@ -49,4 +50,4 @@
     }
 }
 
-Get-UPNtoSMTP -verbose | ?{$_.upn -ne $_.primarySMTPAddress}
+Get-UPNtoSMTP -verbose | Where-Object {$_.upn -ne $_.primarySMTPAddress}
