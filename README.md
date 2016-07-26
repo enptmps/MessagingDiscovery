@@ -40,6 +40,8 @@ import members into the DGs in 365
 7-15-16 edits will remove mailboxes that don’t have these permissions and added into the report and added more mailbox permissions.
 This is helpful because if mailboxes have these permissions they should be migrated over to Office 365 as a group to retain these permissions.
 
+7-26-16 edit to have it show all users so we can filter out permissions.
+
 ```powershell
 ./MbxPermissions.ps1
 ```
